@@ -44,7 +44,7 @@ assetsSummary:
   - PlaneSegmentation
   - Position
 citation: Bandi, Akhil (2026) Shared and task-specific choice codes coexist across
-  cortical populations (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/002050/draft
+  cortical populations (Version 0.261105.1344) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.002050/0.261105.1344
 contributor:
 - affiliation: []
   email: acbandi@andrew.cmu.edu
@@ -54,6 +54,7 @@ contributor:
   - dcite:ContactPerson
   schemaKey: Person
 dateCreated: '2026-11-05T13:25:34.638432+00:00'
+datePublished: '2026-11-05T13:44:47.774668+00:00'
 description: Two-photon calcium imaging of mouse parietal cortex during performance
   of multiple decision-making tasks in the same session (visual, audio, multisensory).
   39  imaging sessions (GCaMP6s, CaMKII-tTA x GCaMP6s mice, 7 mice) from posterior
@@ -64,8 +65,9 @@ description: Two-photon calcium imaging of mouse parietal cortex during performa
   ROIs, raw and neuropil fluorescence, dF/F and deconvolved activity, per-frame VR
   position, velocity and view angle, a trial table with cue, choice, outcome and context,
   and context blocks as epochs. Raw imaging movies are not included.
+doi: 10.48324/dandi.002050/0.261105.1344
 ethicsApproval: []
-id: DANDI:002050/draft
+id: DANDI:002050/0.261105.1344
 identifier: DANDI:002050
 keywords:
 - 'two-photon calcium imaging; '
@@ -80,12 +82,25 @@ keywords:
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
-- https://api.dandiarchive.org/api/dandisets/002050/versions/draft/assets/
+- https://dandiarchive.s3.amazonaws.com/dandisets/002050/0.261105.1344/assets.yaml
 name: Shared and task-specific choice codes coexist across cortical populations
+publishedBy:
+  endDate: '2026-11-05T13:44:47.774668+00:00'
+  id: urn:uuid:1667b49a-d884-4b3c-aef6-2de1f5fb6ff3
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2026-11-05T13:44:47.774668+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:61ff92dd-408f-43c4-92d5-07f8ce0f6090
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
 relatedResource: []
+releaseNotes: Initial release
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.7.0
-url: https://dandiarchive.org/dandiset/002050/draft
-version: draft
+url: https://dandiarchive.org/dandiset/002050/0.261105.1344
+version: 0.261105.1344
 wasGeneratedBy: []
