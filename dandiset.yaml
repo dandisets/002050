@@ -3,13 +3,46 @@
 # and obtained from the dandiarchive.
 '@context': 
   https://raw.githubusercontent.com/dandi/schema/master/releases/0.7.0/context.json
+about: []
 access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
 assetsSummary:
-  numberOfBytes: 0
-  numberOfFiles: 0
+  approach:
+  - name: microscopy approach; cell population imaging
+    schemaKey: ApproachType
+  - name: behavioral approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: behavioral technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 63569504098
+  numberOfFiles: 39
+  numberOfSamples: 1
+  numberOfSubjects: 7
   schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - CompassDirection
+  - SpatialSeries
+  - RoiResponseSeries
+  - BehavioralTimeSeries
+  - OpticalChannel
+  - ImagingPlane
+  - ProcessingModule
+  - PlaneSegmentation
+  - Position
 citation: Bandi, Akhil (2026) Shared and task-specific choice codes coexist across
   cortical populations (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/002050/draft
 contributor:
@@ -21,31 +54,38 @@ contributor:
   - dcite:ContactPerson
   schemaKey: Person
 dateCreated: '2026-11-05T13:25:34.638432+00:00'
-description: Animals often make the same choice in different tasks, guided by different
-  cues or expressed through different movements. Shared representations can support
-  generalization across tasks, whereas task-specific representations can reduce interference1–3.
-  Previous studies have revealed varying degrees of sharing in cortical choice codes4–7.
-  How single neurons contribute to shared and task-specific readouts of a choice,
-  and whether they do so in the same way in different areas and species, is unclear.
-  Here we show that in mouse parietal and monkey frontal cortex, choice neurons span
-  a continuum from preserving their choice preference across tasks to losing or reversing
-  it. Neurons that kept their preference supported a choice readout that transferred
-  across tasks, whereas neurons that lost or reversed it contributed to the interaction
-  between choice and task. This relationship appeared in both species, across changes
-  in sensory modality in mice and eye-movement type in monkeys. Recurrent networks
-  trained on many tasks8 developed the same continuum, and the share of units at each
-  end varied with how the tasks related. These results show how one cortical population
-  can carry shared and task-specific codes for the same choice, and identify the relationship
-  between tasks as a determinant of their balance in networks.
+description: Two-photon calcium imaging of mouse parietal cortex during performance
+  of multiple decision-making tasks in the same session (visual, audio, multisensory).
+  39  imaging sessions (GCaMP6s, CaMKII-tTA x GCaMP6s mice, 7 mice) from posterior
+  parietal cortex at 150–350 µm depth, imaged at 15.1 Hz while mice ran through a
+  virtual-reality T-maze. In blocks of trials, mice turned left or right according
+  to a visual cue (Gabor patch at 0° or 90°), an auditory cue (sound from the left
+  or right speaker), or both cues together (congruent). Each NWB file holds suite2p
+  ROIs, raw and neuropil fluorescence, dF/F and deconvolved activity, per-frame VR
+  position, velocity and view angle, a trial table with cue, choice, outcome and context,
+  and context blocks as epochs. Raw imaging movies are not included.
+ethicsApproval: []
 id: DANDI:002050/draft
 identifier: DANDI:002050
+keywords:
+- 'two-photon calcium imaging; '
+- 'GCaMP6s '
+- posterior parietal cortex
+- virtual reality
+- T-maze
+- visual discrimination
+- auditory discrimination
+- multisensory
+- context-dependent decision making
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/002050/versions/draft/assets/
 name: Shared and task-specific choice codes coexist across cortical populations
+relatedResource: []
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.7.0
 url: https://dandiarchive.org/dandiset/002050/draft
 version: draft
+wasGeneratedBy: []
